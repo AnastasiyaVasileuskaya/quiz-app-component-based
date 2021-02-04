@@ -1,4 +1,4 @@
-.Headercomponent {
+.Header {
   text-align: center;
   border: 1px solid hotpink;
   border-bottom-left-radius: 20px;
@@ -6,14 +6,14 @@
   overflow: hidden;
 }
 
-.Headercomponent__title {
+.Header__title {
   background-color: hotpink;
   color: white;
   padding-top: 8px;
   margin: 0;
 }
 
-.Headercomponent__subtitle {
+.Header__subtitle {
   display: block;
   font-size: 75%;
   background-color: white;

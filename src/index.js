@@ -1,11 +1,10 @@
-import Headercomponent from './components/Headercomponent'
-import Button from './components/Button'
+import Header from './components/Header'
+import Card from './components/Card'
 
-const headercomponent = Headercomponent()
+const header = Header('Quiz App', 'May the best win!')
 
-document.body.append(headercomponent)
+document.body.append(header)
 
-const button1 = Button('Click me!')
-const button2 = Button('Hold me!')
-document.body.append(button1)
-document.body.append(button2)
+const card = Card('Frage', 'Antwort')
+
+document.body.append(card)
