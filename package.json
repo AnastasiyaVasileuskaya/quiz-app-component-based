@@ -1,5 +1,5 @@
 {
-  "name": "quiz-app",
+  "name": "quiz-app-component-based",
   "version": "0.0.1",
   "scripts": {
     "prettier:write": "prettier --write .",
@@ -23,17 +23,17 @@
     "*.html": "htmlhint"
   },
   "keywords": [],
-  "author": "Lene Frei",
+  "author": "Anastasiya",
   "license": "ISC",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/macfrei/quiz-app.git"
+    "url": "git+https://github.com/AnastasiyaVasileuskaya/quiz-app-component-based.git"
   },
   "bugs": {
-    "url": "https://github.com/macfrei/quiz-app/issues"
+    "url": "https://github.com/AnastasiyaVasileuskaya/quiz-app-component-based/issues"
   },
-  "homepage": "https://github.com/macfrei/quiz-app#readme",
+  "homepage": "https://github.com/AnastasiyaVasileuskaya/quiz-app-component-based#readme",
   "description": "",
   "devDependencies": {
     "@babel/core": "^7.12.10",
