@@ -1,10 +1,10 @@
-import createElement from '../lib/createElement'
-import Button from './Button'
+import createElement from '../../lib/createElement'
+import Button from '../Button'
 import './Card.css'
 
 export default function Card(question, answer) {
   const questionEl = createElement('h2', { innerText: question })
-  const buttonEl = Button('Show answer') // vertige Komponent siehe Button.js
+  const buttonEl = Button('Show answer')
   const answerEl = createElement('p', { hidden: true, innerText: answer })
 
   buttonEl.addEventListener('click', () => {
