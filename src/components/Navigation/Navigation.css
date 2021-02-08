@@ -1,0 +1,9 @@
+.Navigation {
+  display: grid;
+  height: 48px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Navigation > img {
+  height: 100%;
+}

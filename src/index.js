@@ -1,15 +1,28 @@
 import Header from './components/Header'
 import Card from './components/Card'
+import Navigation from './components/Navigation/Navigation'
 import createElement from './lib/createElement'
-import Button from './components/Button'
+
+const { el: headerEl, setText: setHeaderText } = Header(
+  'Quiz App',
+  'May the best win!'
+)
+
+const navigation = Navigation(navigate)
+
+function navigate(text) {
+  // 'Home'
+  console.log(text) // finctioniert ausser Navigation im ElternElement
+}
 
 const grid = createElement(
   'div',
   { className: 'appGrid' },
-  Header('Quiz App', 'May the best win!'),
+  headerEl,
   Card('Foo bar?', 'Bar baz!'),
-  Button('Click me!'),
-  Button('Hold me')
+  navigation
 )
+
+setHeaderText('Create', 'a new card')
 
 document.body.append(grid)
