@@ -5,17 +5,20 @@ import HomePage from './components/HomePage/HomePage'
 import Navigation from './components/Navigation/Navigation'
 
 export default function App() {
+  // wir exportieren diese funktion in index.js
   const cards = []
 
   const header = Header('Quiz App')
-  const navigation = Navigation(onNavigate)
   const homePage = HomePage()
-  const createPage = CreatePage(onSubmit, true)
+  const createPage = CreatePage(onSubmit) // übergebe Funktionen die unten difiniert sind
+  createPage.hide()
+  const navigation = Navigation(onNavigate)
 
   const grid = Grid(header, homePage, createPage, navigation)
   document.body.append(grid)
 
   function onSubmit(question, answer) {
+    // aus Form q u a bekommen
     cards.push({ question, answer })
     homePage.setCards(cards)
   }

@@ -3,14 +3,15 @@ import Card from '../Card'
 import './HomePage.css'
 
 export default function HomePage(cards) {
-  const el = createElement('main', { calssName: 'HomePage', hidden: false })
+  // initial Karten reinreichen
+  const el = createElement('main', { calssName: 'HomePage' })
 
-  cards && setCards(cards)
+  cards && setCards(cards) // wenn cards gibt dann ruf diese Funktion auf
 
   function setCards(cards) {
-    const cardElements = cards.map(({ question, answer }) =>
-      Card(question, answer)
-    )
+    const cardElements = cards.map((
+      { question, answer } // holen q una a raus
+    ) => Card(question, answer))
     el.innerHTML = ''
     el.append(...cardElements)
   }
@@ -27,6 +28,6 @@ export default function HomePage(cards) {
     el,
     setCards,
     show,
-    hide,
+    hide, // damit App entscheidet ob HomePage hidden
   }
 }
